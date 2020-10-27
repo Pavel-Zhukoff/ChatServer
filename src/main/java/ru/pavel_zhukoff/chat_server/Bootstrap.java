@@ -110,12 +110,6 @@ public class Bootstrap {
         }
     }
 
-    private void register(Selector selector, ServerSocketChannel serverSocket) throws IOException {
-        SocketChannel client = serverSocket.accept();
-        client.configureBlocking(false);
-        client.register(selector, SelectionKey.OP_READ);
-    }
-
     public void stop() throws IOException {
         this.serverChannel.close();
     }

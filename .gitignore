@@ -14,4 +14,6 @@ IgnoreLexer.java~
 
 /verification
 
+target
+
 src/main/java/ru/pavel_zhukoff/chat_server/Client.java
